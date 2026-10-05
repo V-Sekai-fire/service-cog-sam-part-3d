@@ -9,8 +9,10 @@ The container clones SAMPart3D and builds its GPU extensions. The predictor take
 ## Build and run
 
 ```sh
-cog predict -i mesh_path=@thirdparty/jacket.glb
+cog build
 ```
+
+`cog predict` does not render yet: `predict.py` names `blender_render_16views.py` relative to the working directory, and the script sits at `SAMPart3D/tools/` in the cloned fork.
 
 `setup.sh` installs the same stack into a local Linux environment.
 
